@@ -1,111 +1,34 @@
 # trilha-java-basico
 
-```markdown
-# Desafio Controle de Fluxo
+## Resolução de Desafio "Orientação a Objetos e UML: Diagramação de Classes do iPhone"
 
-Projeto Java para contagem de números em um intervalo e tratamento de exceção personalizada.
 
-## Descrição
+# POO - Desafio
 
-Este projeto consiste em um programa Java que recebe dois números inteiros como entrada e realiza uma contagem de números dentro do intervalo entre esses dois números. Além disso, ele possui um tratamento de exceção personalizada (`ParametrosInvalidosException`) para lidar com casos em que o primeiro parâmetro é maior que o segundo.
+## Modelagem e diagramação da representação em UML e Código no que se refere ao componente iPhone.
 
-## Conteúdo
+Com base no vídeo de lançamento do iPhone conforme link abaixo, elabore em uma ferramenta de UML de sua preferência a diagramação das classes e interfaces com a proposta de representar os papéis do iPhone de: Reprodutor Musicial, Aparelho Telefônico e Navegador na Internet. Em seguida crie as classes e interfaces no formato de arquivos .java
 
-- [Instruções de Uso](#instruções-de-uso)
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação](#instalação)
-- [Desafio Aplicado](#desafio-aplicado)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+Lançamento iPhone 2007
 
-## Instruções de Uso
 
-1. Clone este repositório em sua máquina local:
+</br>
+Comportamentos esperados: </br>
+Repodutor Musicial: tocar, pausar, selecionarMusica </br>
+Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz </br>
+Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
 
-   ```bash
-   git clone https://github.com/seu-usuario/DesafioControleFluxo.git
-   ```
 
-2. Compile o projeto:
+## Controle de Fluxo - Desafio
 
-   ```bash
-   javac Contador.java
-   ```
+Vamos exercitar todo o conteúdo apresentado no módulo de Controle de Fluxo codificando o seguinte cenário.
 
-3. Execute o programa:
+O sistema deverá receber dois parâmetros via terminal que representarão dois números inteiros, com estes dois números você deverá obter a quantidade de interações (for) e realizar a impressão no console (System.out.print) dos números incrementados, exemplo:
 
-   ```bash
-   java Contador
-   ```
+* Se você passar os números 12 e 30, logo teremos uma interação (for) com 18 ocorrências para imprimir os números, exemplo: `"Imprimindo o número 1"`, `"Imprimindo o número 2"` e assim por diante.
+* Se o primeiro parâmetro for MAIOR que o segundo parâmetro, você deverá lançar a exceção customizada chamada de `ParametrosInvalidosException` com a segunda mensagem: "O segundo parâmetro deve ser maior que o primeiro"   
 
-4. Siga as instruções para inserir os dois números inteiros.
 
-## Pré-requisitos
-
-- Java JDK instalado (versão 8 ou superior).
-
-## Desafio Aplicado
-
-Aqui está o código completo:
-
-import java.util.Scanner;
-
-// Classe de exceção personalizada
-class ParametrosInvalidosException extends Exception {
-    public ParametrosInvalidosException(String message) {
-        super(message);
-    }
-}
-
-public class Contador {
-    public static void main(String[] args) {
-        Scanner terminal = new Scanner(System.in);
-        System.out.println("Digite o primeiro parâmetro");
-        int parametroUm = terminal.nextInt();
-        System.out.println("Digite o segundo parâmetro");
-        int parametroDois = terminal.nextInt();
-
-        try {
-            contar(parametroUm, parametroDois);
-        } catch (ParametrosInvalidosException e) {
-            System.out.println(e.getMessage());
-        }
-    }
-
-    static void contar(int parametroUm, int parametroDois) throws ParametrosInvalidosException {
-        if (parametroUm > parametroDois) {
-            throw new ParametrosInvalidosException("O segundo parâmetro deve ser maior que o primeiro");
-        }
-
-        int contagem = parametroDois - parametroUm + 1; // Adicione +1 para incluir o valor final
-        for (int i = 1; i <= contagem; i++) {
-            System.out.println("Imprimindo o número " + i);
-        }
-    }
-
-Neste código:
-
-Criamos a classe ParametrosInvalidosException que herda da classe Exception para criar nossa exceção personalizada com a mensagem desejada.
-
-No método main, usamos um Scanner para obter os parâmetros digitados pelo usuário.
-
-No método contar, verificamos se o primeiro parâmetro é maior que o segundo. Se for o caso, lançamos a exceção personalizada ParametrosInvalidosException. Caso contrário, calculamos a contagem e usamos um loop for para imprimir os números incrementados.
-
-### Caso Válido
-
-Se você fornecer os números 12 e 30 como entrada, o programa imprimirá os números de 1 a 19, pois há 19 números inteiros entre 12 e 30 (inclusive).
-
-### Caso Inválido
-
-Se você fornecer o primeiro parâmetro maior que o segundo, como 30 e 12, o programa lançará a exceção `ParametrosInvalidosException` com a mensagem "O segundo parâmetro deve ser maior que o primeiro", e essa mensagem será impressa no console.
-
-## Contribuição
-
-Sinta-se à vontade para contribuir para este projeto. Você pode abrir problemas (issues) ou enviar solicitações de pull request com melhorias.
-
-## Licença
-
-Este projeto está sob a [Licença MIT](LICENSE).
-```
-
-Lembre-se de personalizar o conteúdo conforme necessário e garantir que os URLs e as informações de contato estejam corretos. Este `README.md` fornece informações sobre como usar o projeto, exemplos e informações de contribuição e licença.
+1. Crie o projeto `DesafioControleFluxo`
+2. Dentro do projeto, crie a classe `Contador.java` para realizar toda a codificação do nosso programa.
+3. Dentro do projeto, crie a classe `ParametrosInvalidosException` que representará a exceção de negócio no sistema. 
