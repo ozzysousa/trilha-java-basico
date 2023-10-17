@@ -65,11 +65,11 @@ Vamos exercitar todo o conteúdo apresentado no módulo de Sintaxe codificando o
 
 Os campos em [ ] devem ser alterados pelas informações que forem inseridas pelos usuários.
 
-# VEJA AQUI ABAIXO OS DESAFIOS:  👇 
-**If you're interested in learning more about my experience and skills, feel free to:**
+# LINKS DOS DESAFIOS:  👇 
+**Acesse aqui embaixo os desafios que foram concluidos:**
 ------
 
-[![POO](https://img.shields.io/badge/Resume%20Online-black?style=for-the-badge&logo=web)](desafios/poo/README.md)
-[![Controle de Fluxo](https://img.shields.io/badge/Download%20PDF-black?style=for-the-badge&logo=pdf)](desafios/controle-fluxo)
-[![Sintaxe](https://img.shields.io/badge/Resume%20Online-black?style=for-the-badge&logo=web)](desafios/sintaxe/README.md)
+[![POO](https://img.shields.io/badge/POO%20-black?style=for-the-badge&logo=web)](desafios/poo/README.md)
+[![Controle de Fluxo](https://img.shields.io/badge/Controle%20de%20Fluxo%20-black?style=for-the-badge&logo=pdf)](desafios/controle-fluxo/README.md)
+[![Sintaxe](https://img.shields.io/badge/Sintaxe%20-black?style=for-the-badge&logo=web)](desafios/sintaxe/README.md)
 
