@@ -1,9 +1,12 @@
+<div align="center">
+  <img src="https://hermes.dio.me/courses/cover/ffd40f3e-17c9-4ccd-9140-8f44b6add39f_landingpage.png" alt="Descrição da imagem">
+</div>
+
 # trilha-java-basico
 
-## Resolução de Desafio "Orientação a Objetos e UML: Diagramação de Classes do iPhone"
+## Resolução de Desafios propostos pela plataforma da DIO
 
-
-# POO - Desafio
+## [POO - Desafio](desafios/poo/README.md) 🔗
 
 ## Modelagem e diagramação da representação em UML e Código no que se refere ao componente iPhone.
 
@@ -19,8 +22,7 @@ Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz </br>
 Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
 
 
-## Controle de Fluxo - Desafio
-
+## [Controle de Fluxo - Desafio](desafios/controle-fluxo) 🔗
 Vamos exercitar todo o conteúdo apresentado no módulo de Controle de Fluxo codificando o seguinte cenário.
 
 O sistema deverá receber dois parâmetros via terminal que representarão dois números inteiros, com estes dois números você deverá obter a quantidade de interações (for) e realizar a impressão no console (System.out.print) dos números incrementados, exemplo:
@@ -32,3 +34,42 @@ O sistema deverá receber dois parâmetros via terminal que representarão dois 
 1. Crie o projeto `DesafioControleFluxo`
 2. Dentro do projeto, crie a classe `Contador.java` para realizar toda a codificação do nosso programa.
 3. Dentro do projeto, crie a classe `ParametrosInvalidosException` que representará a exceção de negócio no sistema. 
+
+## [Sintaxe - Desafio](desafios/sintaxe/README.md) 🔗
+Vamos exercitar todo o conteúdo apresentado no módulo de Sintaxe codificando o seguinte cenário.
+
+1. Crie o projeto `ContaBanco` que receberá dados via terminal contendo as características de conta em banco conforme atributos abaixo:
+2. Dentro do projeto, crie a classe `ContaTerminal.java` para realizar toda a codificação do nosso programa.
+
+###### Revise sobre regras de declaração de variáveis
+
+| Atributo  | Tipo     | Exemplo   
+| --------- | ---------| ------- 
+| Numero    | Inteiro  | 1021 
+| Agencia   | Texto    | 067-8
+| Nome Cliente | Texto    | MARIO ANDRADE
+| Saldo | Decimal |237.48
+
+
+###### Revise sobre terminal, main args e a classe Scanner
+2. Permita que os dados sejam inseridos via terminal sendo que o usuário receberá a mensagem de qual informação será solicitada, exemplo:
+
+* Programa: "Por favor, digite o número da Agência !"
+* Usuário: 1021 *(depois ENTER para o próximo campo)* 
+
+###### Revise sobre concatenação e classe String com método concat
+
+3. Depois de todas as informações terem sido inseridas, o sistema deverá exibir a seguinte mensagem:
+
+*"Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo [Saldo] já está disponível para saque".*
+
+Os campos em [ ] devem ser alterados pelas informações que forem inseridas pelos usuários.
+
+# VEJA AQUI ABAIXO OS DESAFIOS:  👇 
+**If you're interested in learning more about my experience and skills, feel free to:**
+------
+
+[![POO](https://img.shields.io/badge/Resume%20Online-black?style=for-the-badge&logo=web)](desafios/poo/README.md)
+[![Controle de Fluxo](https://img.shields.io/badge/Download%20PDF-black?style=for-the-badge&logo=pdf)](desafios/controle-fluxo)
+[![Sintaxe](https://img.shields.io/badge/Resume%20Online-black?style=for-the-badge&logo=web)](desafios/sintaxe/README.md)
+
